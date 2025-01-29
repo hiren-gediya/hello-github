@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Photography</div>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Capturing Moments, Creating Memories</h1>
+        <p>Explore the world through my lens</p>
+    </section>
+
+    <section id="portfolio" class="gallery">
+        <img src="./img/bg.jpg" alt="Photography Sample 1">
+        <img src="./img/bg.jpg" alt="Photography Sample 2">
+        <img src="./img/bg.jpg" alt="Photography Sample 3">
+        <img src="./img/bg.jpg" alt="Photography Sample 4">
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate photographer capturing the beauty of the world.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: photographer@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Photography. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
